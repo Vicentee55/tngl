@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>tngl</title>
+</head>
+<body>
+
+  <video autoplay muted loop playsinline id="background-video">
+    <source src="1.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo HTML5.
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h1>Jogo do Rei</h1>
+    <p>Clique abaixo para iniciar o jogo
+        <br>Use WASD para se movimentar no jogo.
+    </p>
+    <button class="btn" onclick="mostrarAviso()">Jogar</button>
+
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>Antes de começar, leia isso com atenção:</p>
+      <p style="margin-top: 10px;">Este projeto é totalmente open source. Você pode usar e modificar à vontade, só peço que mantenha os créditos. Contato: zwhitezinn (Discord).</p>
+      <button onclick="continuar()" class="btn" style="margin-top: 20px;">OK</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>2025 - Kawe e Thaylla</p>
+    <nav>
+      <ul>
+        <li><a href="https://vicentee55.github.io/vicente/">Me Conheça</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    function mostrarAviso() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+  
+    function continuar() {
+      window.location.href = 'https://vicentee55.github.io/rei/'; // substitua pelo seu link
+    }
+  </script>
+
+</body>
+</html>
